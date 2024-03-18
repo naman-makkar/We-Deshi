@@ -1,0 +1,70 @@
+/* Reset Password Form CSS */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.reset-password-form {
+    height: 350px;
+    width: 300px;
+    padding: 30px;
+    margin: 50px auto;
+    background-color: white;
+    box-shadow: 0 0 40px 10px black;
+    border: 5px solid gray;
+}
+.reset-password-form h1{
+    left: 10%;
+    font-size:30px;
+    margin-bottom: 60px;
+    color:#3c00a0;
+    position:relative;
+
+}
+.reset-password-form h1::after{
+    content:'';
+    width:50px;
+    height: 3px;
+    border-radius: 30px;
+    background: #3c00a0;
+    position:absolute;
+    bottom:-12px;
+    left:30%;
+    
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+p {
+    text-align: center;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    outline: none;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #5cdb95;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #3fb173;
+}

@@ -25,6 +25,7 @@ body, html {
 .w3-bar .w3-button {
   padding: 5px;
 }
+
 </style>
 </head>
 <body>
@@ -38,12 +39,12 @@ body, html {
     
     <!-- Right-sided navbar links -->
     <div class="w3-right w3-hide-small">
-      <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+      <a href="Login/login.html" target="_blank" class="w3-bar-item w3-button"><i class="fa fa-th"></i> Login</a>
+      <a href="#about" class="w3-bar-item w3-button"><i class="fa fa-info-circle"></i> ABOUT</a>
       <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
-      <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> WORK</a>
-      <!--<a href="#pricing" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> PRICING</a>-->
       <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
     </div>
+    
     <!-- Hide right-floated links on small screens and replace them with a menu icon -->
     <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
       <i class="fa fa-bars"></i>
@@ -112,11 +113,11 @@ body, html {
 <!-- Team Section -->
 <div class="w3-container" style="padding:10px 16px" id="team">
   <h3 class="w3-center">THE TEAM</h3>
-  <p class="w3-center w3-large">The ones who runs this Project</p>
-  <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
+  <p class="w3-center w3-large">The ones who run this Project</p>
+  <div class="w3-row-padding" style="margin-top:64px">
     <div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-card">
-        <img src="/w3images/team2.jpg" alt="John" style="width:100%">
+        <img src="images/makkar.jpeg" alt="Naman Makkar" style="width:100%">
         <div class="w3-container">
           <h3>Naman Makkar</h3>
           <p class="w3-opacity">Member #1 (Team Leader)</p>
@@ -127,7 +128,7 @@ body, html {
     </div>
     <div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-card">
-        <img src="/w3images/team1.jpg" alt="Jane" style="width:100%">
+        <img src="images/shivam.jpeg" alt="Shivam Bhardwaj" style="width:100%">
         <div class="w3-container">
           <h3>Shivam Bhardwaj</h3>
           <p class="w3-opacity">Memeber #2</p>
@@ -138,7 +139,7 @@ body, html {
     </div>
     <div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-card">
-        <img src="/w3images/team3.jpg" alt="Mike" style="width:100%">
+        <img src="images/kartikey.jpeg" alt="Kartikey Setia" style="width:100%">
         <div class="w3-container">
           <h3>Kartikey Setia</h3>
           <p class="w3-opacity">Member #3</p>
@@ -149,7 +150,7 @@ body, html {
     </div>
     <div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-card">
-        <img src="/w3images/team4.jpg" alt="Dan" style="width:100%">
+        <img src="/w3images/team4.jpg" alt="Suhani Dwivedi" style="width:100%">
         <div class="w3-container">
           <h3>Suhani Dwivedi</h3>
           <p class="w3-opacity">Member #4</p>
@@ -161,10 +162,33 @@ body, html {
   </div>
 </div>
 
+<div class="faq-container">
+  <h2>Frequently Asked Questions</h2>
+  <div class="faq-item">
+    <h3 class="question">Question 1: What is We-Deshi?</h3>
+    <div class="answer">
+      <p>We-Deshi is a digital marketplace that promotes local businesses and products. We aim to connect buyers with sellers from their local communities, fostering economic growth and supporting small-scale enterprises.</p>
+    </div>
+  </div>
+  <div class="faq-item">
+    <h3 class="question">Question 2: How can I buy products on We-Deshi?</h3>
+    <div class="answer">
+      <p>To buy products on We-Deshi, simply browse through our listings, add items to your shopping cart, and proceed to checkout. You can pay securely using various payment methods available on our platform.</p>
+    </div>
+  </div>
+  <div class="faq-item">
+    <h3 class="question">Question 3: Can I sell my products on We-Deshi?</h3>
+    <div class="answer">
+      <p>Yes, We-Deshi welcomes local sellers to join our platform and showcase their products. Simply sign up as a seller, list your products, and start reaching out to potential buyers in your community.</p>
+    </div>
+  </div>
+  <!-- Add more FAQ items as needed -->
+</div>
+
 <!-- Contact Section -->
 <div class="w3-container w3-padding-64" id="contact">
   <h3 class="w3-center">WHERE WE WORK</h3>
-  <p class="w3-center w3-large">Find us at some address at some place</p>
+  <p class="w3-center w3-large">Find the nearest place to find us</p>
   <div class="w3-row-padding" style="margin-top:64px">
     <div class="w3-col m6">
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d158853.20797507086!2d-0.24168197439118135!3d51.52873527751458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604cbb4f1dd01%3A0x3be594fa68d7aa07!2sLondon%2C%20UK!5e0!3m2!1sen!2sbd!4v1610425950534!5m2!1sen!2sbd" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
@@ -178,7 +202,7 @@ body, html {
           <input class="w3-input w3-border" type="text" placeholder="Email">
         </div>
       </div>
-      <input class="w3-input w3-border" type="text" placeholder="Message">
+      <input class="w3-input w3-border" type="text" placeholder="Reviews">
       <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
     </div>
   </div>
