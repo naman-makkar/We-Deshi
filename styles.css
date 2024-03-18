@@ -75,6 +75,7 @@ body, html {
 }
 
 
+
 /* Navbar Links on Small Screens */
 @media screen and (max-width: 600px) {
   .w3-navbar li a {
