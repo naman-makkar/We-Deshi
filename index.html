@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>We-Deshi</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("images/background.jpg");
+  min-height: 100%;
+}
+
+.w3-bar .w3-button {
+  padding: 5px;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="#home" class="w3-bar-item w3-button w3-wide">
+        <img src="images/_113775c4-136f-4f89-9e11-e527c0aaf2f6.jpg" alt="Logo">
+    </a>
+    
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+      <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
+      <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> WORK</a>
+      <!--<a href="#pricing" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> PRICING</a>-->
+      <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
+  <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">WORK</a>
+  <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">PRICING</a>
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+</nav>
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-left w3-text-white" style="padding:48px">
+    <span class="w3-jumbo w3-hide-small">Be Vocal-Buy Local</span><br>
+    <span class="w3-xxlarge w3-hide-large w3-hide-medium">Be Vocal-Buy Local</span><br>
+    <span class="w3-large">Everything at a single place</span>
+    <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Discover the Heartbeat of Local India</a></p>
+  </div> 
+  <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+</header>
+
+<!-- About Section -->
+<div class="w3-container" style="padding:10px 16px" id="about">
+  <h3 class="w3-center">ABOUT THE INITIATIVE</h3>
+  <p class="w3-center w3-large">Key features of our project</p>
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+    <div class="w3-quarter">
+      <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
+      <p class="w3-large">Responsive</p>
+      <p>Our platform embraces the ONDC ethos of interoperability and flexibility, ensuring a seamless and responsive user experience.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Passion</p>
+      <p> Our commitment mirrors the ONDC’s vision of creating a level playing field for participants,empowering small and medium-sized businesses to compete alongside e-commerce giants.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-diamond w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Design</p>
+      <p>We prioritize user-centric design that simplifies navigation, enhances discoverability,  ensuring that users of all backgrounds can benefit from the digital marketplace.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Support</p>
+      <p>We provide comprehensive assistance to ensure that every user and merchant on our platform can navigate the digital commerce space confidently and with ease.</p>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Team Section -->
+<div class="w3-container" style="padding:10px 16px" id="team">
+  <h3 class="w3-center">THE TEAM</h3>
+  <p class="w3-center w3-large">The ones who runs this Project</p>
+  <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="/w3images/team2.jpg" alt="John" style="width:100%">
+        <div class="w3-container">
+          <h3>Naman Makkar</h3>
+          <p class="w3-opacity">Member #1 (Team Leader)</p>
+          <p>Buyer side Integration in the interface</p>
+          <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="/w3images/team1.jpg" alt="Jane" style="width:100%">
+        <div class="w3-container">
+          <h3>Shivam Bhardwaj</h3>
+          <p class="w3-opacity">Memeber #2</p>
+          <p>Seller side Integration in the interface</p>
+          <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="/w3images/team3.jpg" alt="Mike" style="width:100%">
+        <div class="w3-container">
+          <h3>Kartikey Setia</h3>
+          <p class="w3-opacity">Member #3</p>
+          <p>Database Manager</p>
+          <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="/w3images/team4.jpg" alt="Dan" style="width:100%">
+        <div class="w3-container">
+          <h3>Suhani Dwivedi</h3>
+          <p class="w3-opacity">Member #4</p>
+          <p>UI/UX Design Part and content</p>
+          <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Contact Section -->
+<div class="w3-container w3-padding-64" id="contact">
+  <h3 class="w3-center">WHERE WE WORK</h3>
+  <p class="w3-center w3-large">Find us at some address at some place</p>
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-col m6">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d158853.20797507086!2d-0.24168197439118135!3d51.52873527751458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604cbb4f1dd01%3A0x3be594fa68d7aa07!2sLondon%2C%20UK!5e0!3m2!1sen!2sbd!4v1610425950534!5m2!1sen!2sbd" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+    <div class="w3-col m6">
+      <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+        <div class="w3-half">
+          <input class="w3-input w3-border" type="text" placeholder="Name">
+        </div>
+        <div class="w3-half">
+          <input class="w3-input w3-border" type="text" placeholder="Email">
+        </div>
+      </div>
+      <input class="w3-input w3-border" type="text" placeholder="Message">
+      <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity" style="margin-right: 10px;cursor: pointer;"></i>
+    <i class="fa fa-instagram w3-hover-opacity" style="margin-right: 10px; cursor: pointer;"></i>
+    <i class="fa fa-snapchat w3-hover-opacity" style="margin-right: 10px;cursor: pointer;"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity" style="margin-right: 10px;cursor: pointer;"></i>
+    <i class="fa fa-twitter w3-hover-opacity" style="margin-right: 10px;cursor: pointer;"></i>
+    <i class="fa fa-linkedin w3-hover-opacity" style="cursor: pointer;"></i>
+</div>
+
+  <!--<p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>-->
+</footer>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+</body>
+</html>

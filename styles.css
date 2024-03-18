@@ -1,0 +1,72 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+/* Global Styles */
+body, h1, h2, h3, h4, h5, h6 {
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+/* Background Image Header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("/w3images/mac.jpg");
+  min-height: 100%;
+}
+
+/* Navbar */
+.w3-top {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  padding-top: 10px;
+}
+
+.w3-bar .w3-button {
+  padding: 10px;
+}
+
+/* Sidebar */
+.w3-sidebar {
+  height: 100%;
+  width: 200px;
+  background-color: #222;
+  position: fixed !important;
+  z-index: 1;
+  overflow: auto;
+  display: none;
+}
+
+
+
+/* Navbar Links on Small Screens */
+@media screen and (max-width: 600px) {
+  .w3-navbar li a {
+    display: none;
+  }
+  .w3-navbar li {
+    display: block;
+    text-align: center;
+  }
+}
+
+/* Sidebar Links */
+.w3-sidebar a {
+  padding: 10px;
+  font-size: 18px;
+  text-decoration: none;
+  display: block;
+}
+
+.w3-sidebar a:hover {
+  background-color: #555;
+  color: white;
+  cursor:pointer;
+}
