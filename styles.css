@@ -43,11 +43,69 @@ body, html {
   overflow: auto;
   display: none;
 }
+/* ONDC Participant Portal Styles */
+.ondc-portal {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #1c75bc; /* Light blue background color */
+  display: flex; /* Use flexbox */
+}
+
+.ondc-portal h2 {
+  color: white;
+  font-size: 2rem;
+  margin-top: 0;
+  font-weight: 600;
+}
+
+.ondc-portal p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.ondc-portal ul {
+  padding: 0;
+  margin: 0;
+}
+
+.ondc-portal li {
+  list-style-type: disc;
+  padding: 5px 0;
+  color: white;
+}
+
+.ondc-portal li strong {
+  font-weight: bold;
+}
+
+.cta-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #fff; /* White button color */
+  color: #007bff; /* Text color */
+  border: 2px solid #007bff; /* Border color */
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+.cta-button:hover {
+  background-color: rgb(20, 20, 219); /* Hover background color */
+  border-color: #0056b3;
+  color: #fff; /* Hover text color */
+}
 
 /* Style for FAQ section */
 .faq-container {
   max-width: 800px;
   margin: 0 auto;
+  padding-top: 30px;
 }
 
 .faq-item {
@@ -74,8 +132,6 @@ body, html {
   display: block;
 }
 
-
-
 /* Navbar Links on Small Screens */
 @media screen and (max-width: 600px) {
   .w3-navbar li a {
@@ -98,5 +154,50 @@ body, html {
 .w3-sidebar a:hover {
   background-color: #555;
   color: white;
-  cursor:pointer;
+  cursor: pointer;
+}
+
+/* Blog Section */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.blog-post {
+  margin-bottom: 30px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 20px;
+}
+
+.blog-post h2 {
+  margin-top: 0;
+}
+
+.date {
+  color: #666;
+  font-style: italic;
+}
+
+.read-more {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.read-more:hover {
+  background-color: #0056b3;
 }

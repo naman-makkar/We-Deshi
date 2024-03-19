@@ -7,6 +7,8 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="styles.css">
+<script src="script.js"></script>
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 
@@ -161,7 +163,21 @@ body, html {
     </div>
   </div>
 </div>
-
+<div class="ondc-portal">
+  <div>
+    <img src="images/bottom_bnr_img.png">
+  </div>
+  <div><h2> ONDC Participant Portal</h2>
+    <p>Begin and efficiently manage your journey on ONDC Network</p>
+    <ul>
+        <li><strong>Understand and select your role(s)</strong></li>
+        <li>Track, manage and troubleshoot your integration</li>
+        <li><strong>Discover and collaborate with others</strong></li>
+        <li>Stay informed on network developments and announcements</li>
+    </ul>
+    <a href="Login/login.html"target="_blank" class="cta-button">Sign up</a></div>
+  
+</div>
 <div class="faq-container">
   <h2>Frequently Asked Questions</h2>
   <div class="faq-item">
@@ -184,7 +200,36 @@ body, html {
   </div>
   <!-- Add more FAQ items as needed -->
 </div>
+<div class="container">
+  <h1>Latest Blog Posts</h1>
+  
+  <div class="blog-post">
+    <h2>Exciting New Feature Released!</h2>
+    <p class="date">Published on March 9, 2024</p>
+    <p>We are thrilled to announce the release of our latest feature that revolutionizes the way you interact with our platform. This feature enhances user experience and brings added convenience to your daily activities.</p>
+    <a href="#" class="read-more" onclick="toggleContent('content1')">Read More</a>
+    <div id="content1" class="additional-content">
+      <p>This is the additional content for the first blog post.</p>
+    </div>
+  </div>
+  
+  <div class="blog-post">
+    <h2>Join Our Community Event!</h2>
+    <p class="date">Published on March 12, 2024</p>
+    <p>Calling all members of our community! Join us for an exciting event where we celebrate local businesses and showcase their incredible products. It's a day filled with fun, networking, and support for our local economy.</p>
+    <a href="#" class="read-more" onclick="toggleContent('content2')">Read More</a>
+    <div id="content2" class="additional-content">
+      <p>This is the additional content for the second blog post.</p>
+    </div>
+  </div>
+</div>
 
+<script>
+  function toggleContent(contentId) {
+    var content = document.getElementById(contentId);
+    content.classList.toggle('show-additional-content');
+  }
+</script>
 <!-- Contact Section -->
 <div class="w3-container w3-padding-64" id="contact">
   <h3 class="w3-center">WHERE WE WORK</h3>
