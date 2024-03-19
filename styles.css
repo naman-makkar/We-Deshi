@@ -26,12 +26,25 @@ body, html {
   position: fixed;
   width: 100%;
   z-index: 1000;
-  padding-top: -10px;
 }
 
-.w3-bar .w3-button {
-  padding: 10px;
+.w3-bar {
+  display: flex;
+  justify-content: space-between; /* Align items to the left and right */
+  align-items: center; /* Vertically center items */
+  margin: 0;
 }
+
+.logo {
+  margin-right: auto; /* Move the logo to the extreme left */
+}
+
+.side-buttons {
+  margin-left: auto; /* Move the side-buttons to the extreme right */
+}
+
+
+
 
 /* Sidebar */
 .w3-sidebar {
@@ -88,11 +101,12 @@ body, html {
   padding: 10px;
   background-color: #fff; /* White button color */
   color: #007bff; /* Text color */
-  border: 2px solid #007bff; /* Border color */
+  border: 2px solid #045ab6; /* Border color */
   border-radius: 5px;
   text-align: center;
   text-decoration: none;
   margin-top: 20px;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .cta-button:hover {
@@ -106,6 +120,7 @@ body, html {
   max-width: 800px;
   margin: 0 auto;
   padding-top: 30px;
+  text-align: center;
 }
 
 .faq-item {
@@ -152,7 +167,7 @@ body, html {
 }
 
 .w3-sidebar a:hover {
-  background-color: #555;
+  font-weight: bold;
   color: white;
   cursor: pointer;
 }

@@ -35,22 +35,25 @@ body, html {
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
   <div class="w3-bar w3-white w3-card" id="myNavbar">
-    <a href="#home" class="w3-bar-item w3-button w3-wide">
+    <div class="logo">
+      <a href="#home" class="w3-bar-item w3-button w3-wide">
         <img src="images/_113775c4-136f-4f89-9e11-e527c0aaf2f6.jpg" alt="Logo">
     </a>
-    
-    <!-- Right-sided navbar links -->
-    <div class="w3-right w3-hide-small">
-      <a href="Login/login.html" target="_blank" class="w3-bar-item w3-button"><i class="fa fa-th"></i> Login</a>
-      <a href="#about" class="w3-bar-item w3-button"><i class="fa fa-info-circle"></i> ABOUT</a>
-      <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
-      <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
     </div>
-    
-    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
-    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
-      <i class="fa fa-bars"></i>
-    </a>
+    <div class="side-buttons">
+        <!-- Right-sided navbar links -->
+      <div class="w3-right w3-hide-small">
+        <a href="Login/login.html" target="_blank" class="w3-bar-item w3-button"><i class="fa fa-th"></i> Login</a>
+        <a href="#about" class="w3-bar-item w3-button"><i class="fa fa-info-circle"></i> ABOUT</a>
+        <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
+        <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+      </div>
+      
+      <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>   
   </div>
 </div>
 
@@ -167,8 +170,8 @@ body, html {
   <div>
     <img src="images/bottom_bnr_img.png">
   </div>
-  <div><h2> ONDC Participant Portal</h2>
-    <p>Begin and efficiently manage your journey on ONDC Network</p>
+  <div><h2> We-Deshi Participant Portal</h2>
+    <p>Begin and efficiently manage your journey on the We-Deshi application</p>
     <ul>
         <li><strong>Understand and select your role(s)</strong></li>
         <li>Track, manage and troubleshoot your integration</li>
@@ -179,7 +182,7 @@ body, html {
   
 </div>
 <div class="faq-container">
-  <h2>Frequently Asked Questions</h2>
+  <h2><strong>Frequently Asked Questions</strong></h2>
   <div class="faq-item">
     <h3 class="question">Question 1: What is We-Deshi?</h3>
     <div class="answer">
@@ -201,7 +204,7 @@ body, html {
   <!-- Add more FAQ items as needed -->
 </div>
 <div class="container">
-  <h1>Latest Blog Posts</h1>
+  <h1><strong>Latest Blog Posts</strong></h1>
   
   <div class="blog-post">
     <h2>Exciting New Feature Released!</h2>
@@ -253,6 +256,31 @@ body, html {
   </div>
 </div>
 
+<!-- Contact Section -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
+  <h3 class="w3-center">CONTACT</h3>
+  <p class="w3-center w3-large">Lets get in touch. Interact with us:</p>
+  <div style="margin-top:48px">
+    <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Greater Noida,India</p>
+    <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: 8630253745,8546952145</p>
+    <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: team@wedeshi.org</p>
+    <br>
+    <!--
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
+      -->
+      <!--<p>
+        <button class="w3-button w3-black" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form>
+    <img src="/w3images/map.jpg" class="w3-image w3-greyscale" style="width:100%;margin-top:48px">-->
+  </div>
+</div>
 <!-- Footer -->
 <footer class="w3-center w3-black w3-padding-64">
   <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
