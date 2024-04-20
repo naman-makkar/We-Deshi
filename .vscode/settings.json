@@ -1,3 +1,4 @@
 {
-    "liveServer.settings.port": 5502
+    "python.pythonPath": "C:\\Program Files\\Python39\\python.exe",
+    "git.ignoreLimitWarning": true
 }
